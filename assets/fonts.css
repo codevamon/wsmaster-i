@@ -1,0 +1,11 @@
+/* CookRetroish - Regular */
+@font-face {
+  font-family: 'CookRetroish';
+  src: url('https://cdn.shopify.com/s/files/1/0673/3607/7485/files/CookRetroish.woff?v=1742591180') format('woff'),
+       url('https://cdn.shopify.com/s/files/1/0673/3607/7485/files/CookRetroish.ttf?v=1742591185') format('truetype'),
+       url('https://cdn.shopify.com/s/files/1/0673/3607/7485/files/CookRetroish.otf?v=1742591170') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');

@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Include clickable links to your collection pages to give customers an overview of your catalog.",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 32
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    }
+  },
+  "order": [
+    "rich-text",
+    "main"
+  ]
+}

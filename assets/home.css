@@ -1,0 +1,104 @@
+/* I */
+  main._home._i {
+    padding: 5vw 0 0;
+    background: #FFEBC0;
+    min-height: 100vh;
+  }
+  main._home._i .title-1{
+    color:#0C451B;
+  }
+  main._home._i ._inside ._content>._flex{
+    flex-wrap: wrap;
+  }
+  main._home._i ._inside ._content>._flex>._i {
+    z-index: 2;
+  }
+  main._home._i ._inside ._content>._flex>div{
+  }
+  main._home._i ._inside ._content ._medias {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  main._home._i ._inside ._content figure._media._i {
+    position: absolute;
+    border-radius: 1000vw;
+    overflow: hidden;
+    width: 60vw;
+    height: 60vw;
+    right: -10vw;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  main._home._i ._inside ._content figure._media._i img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    font-variant: proportional-nums;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(1);
+  }
+/* END I */
+
+/* RESPONSIVE */
+  @media(min-width:1200px){
+    main._home._i ._inside ._content>._flex{
+      grid-gap:1vw
+    }
+    main._home._i ._inside ._content>._flex>div{
+      width:calc(50% - 0.5vw);
+    }
+    main._home._i ._inside ._content>._flex>._i {
+      padding: 20vh 0;
+    }
+    main._home._i .title-1 {
+      margin-bottom: 2vw;
+    }
+  }
+  @media(max-width:1199px){
+    main._home._i ._inside ._content>._flex>._i {
+      padding: 20vh 0;
+    }
+  }
+  @media(max-width:1199px) and (min-width:992px){
+    main._home._i ._inside ._content>._flex>._i {
+      padding: 6rem 0;
+    }
+  }
+  @media(min-width:992px){
+  }
+  @media(max-width:991px){
+  }
+  @media(max-width:991px) and (min-width:768px){
+    main._home._i ._inside ._content>._flex>._i {
+      padding: 5rem 0;
+    }
+  }
+  @media(min-width:768px){
+  }
+  @media(max-width:767px){
+  }
+  @media(max-width:767px) and (min-width:576px){
+    main._home._i ._inside ._content>._flex>._i {
+      padding: 5rem 0;
+    }
+  }
+  @media(min-width:576px){
+  }
+  @media(max-width:575px){
+    main._home._i ._inside ._content>._flex>._i {
+      padding: 3rem 0;
+    }
+  }
+    
+/* END RESPONSIVE */

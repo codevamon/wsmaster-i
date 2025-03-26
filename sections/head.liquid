@@ -1,0 +1,83 @@
+<section class="_header _1">
+  <div class="_container _1">
+    <div class="_flex">
+      <div class="_first">
+        <a class="_brand" href="/">
+          <img src="https://cdn.shopify.com/s/files/1/0673/3607/7485/files/logo-1.svg?v=1742925143" width="200">
+        </a>
+      </div>
+      <div class="_second">
+        <div class="_menu d-none d-lg-flex">
+          <ul class="_nav nav">
+            {% for item in linklists.main-menu.links %}
+              <li class="_item nav-item dropdown {% if item.active %}current{% endif %}">
+                {% if item.links and item.links.size > 0 %}
+                  <a 
+                    href="{{ item.url }}" 
+                    class="dropdown-toggle text-2 _bld" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false"
+                  >
+                    {{ item.title }}
+                  </a>
+                  <ul class="dropdown-menu">
+                    {% for subitem in item.links %}
+                      <li>
+                        <a 
+                          class="dropdown-item {% if subitem.active %}current{% endif %} text-2 _bld" 
+                          href="{{ subitem.url }}"
+                        >
+                          {{ subitem.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% else %}
+                  <a 
+                    class="text-2 _bld" 
+                    href="{{ item.url }}" 
+                    aria-label="Go to {{ item.title }} page"
+                  >
+                    {{ item.title }}
+                  </a>
+                {% endif %}
+              </li>
+            {% endfor %}
+            <span class="bean-i"></span>
+          </ul>
+        </div>
+        <div class="_icons ">
+          <a  class="_icon btnactivemenu" id="cart-icon-bubble">
+            <span class="_svg-wrapper">
+              <svg viewBox="0 0 143.23 101.87" xmlns="http://www.w3.org/2000/svg" id="Capa_1" style="min-width: 1rem;">
+                <defs>
+                </defs>
+                <path d="M131.98,27.37c-.36-1.73-.9-3.46-1.65-5.08-1.37-2.96-3.43-5.53-6.31-6.98-2.97-1.48-6.45-1.58-9.74-1.22-6.83.74-13.32,3.28-19.98,4.99-4.56,1.16-9.29,1.95-13.99,1.84-4.69.1-9.42-.68-13.99-1.84-6.65-1.71-13.15-4.25-19.98-4.99-3.29-.36-6.77-.26-9.74,1.22-2.88,1.44-4.94,4.02-6.31,6.98-.75,1.62-1.29,3.35-1.65,5.08-1.55,7.52-.28,15.49,2.98,22.43,3.26,6.95,8.44,12.9,14.49,17.63,10.04,7.85,22.19,11.89,34.19,12.02,12-.13,24.15-4.17,34.19-12.02,6.05-4.73,11.22-10.68,14.49-17.63,3.26-6.94,4.54-14.91,2.98-22.43Z" style="fill: #0c451b"></path>
+                <path d="M12.14,24.31c.24.27.52.51.83.72.57.37,1.24.6,1.97.53.75-.07,1.48-.44,2.12-.87,1.33-.89,2.43-2.07,3.63-3.12.83-.72,1.72-1.38,2.7-1.89.96-.54,2-.93,3.05-1.24,1.53-.44,3.11-.72,4.59-1.35.71-.3,1.42-.71,1.89-1.31.45-.58.63-1.26.63-1.94,0-.37-.06-.74-.15-1.08-.4-1.5-1.43-2.77-2.77-3.64-1.34-.87-2.98-1.34-4.68-1.5-2.82-.27-5.71.38-8.19,1.69-2.46,1.37-4.57,3.44-5.88,5.95-.79,1.51-1.28,3.15-1.28,4.74,0,1.59.5,3.15,1.54,4.3Z" style="fill: #0c451b"></path>
+                <g>
+                  <circle r="8.91" cy="85.4" cx="52.43" style="fill: #0c451b"></circle>
+                  <circle r="8.91" cy="85.4" cx="108.2" style="fill: #0c451b"></circle>
+                </g>
+              </svg>
+            </span>
+            <div class="_bubble" data-cart-view>
+              <span rv-show="cart.item_count | gt 0">
+                <span class="mega-nav-count nav-main-cart-amount count-items" data-cart-count-bubble>
+                  <span data-cart-render="item_count"></span>
+                </span>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Head",
+    "settings": []
+  }
+{% endschema %}

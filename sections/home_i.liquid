@@ -1,0 +1,91 @@
+<main class="_home _i">
+  <div class="_inside">
+    <div class="_content">
+      <div class="_flex">
+        <div class="_i">
+          <div class="_container _1">
+            <div class="_info">
+              <div class="title-1">
+                <h1>{{ section.settings.heading | escape }}</h1>
+              </div>
+              {% if section.settings.button_label != blank and section.settings.button_url != blank %}
+                <a href="{{ section.settings.button_url }}" class="_btn btn-i _1">
+                  <div class="_real">
+                    <span class="_info text-btn">{{ section.settings.button_label | escape }}</span>
+                  </div>
+                  <div class="_back">
+                    <span class="_fill"></span>
+                  </div>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="_ii">
+          <div class="_medias">
+            <figure class="_media _i">
+              {% if section.settings.video_url != blank %}
+                <video autoplay muted loop playsinline class="_video" poster="{{ section.settings.image | image_url: width: 800 }}">
+                  <source src="{{ section.settings.video_url }}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              {% elsif section.settings.image != blank %}
+                {{
+                  section.settings.image
+                  | image_url: width: 800, crop: 'center'
+                  | image_tag: loading: 'lazy', class: '_img', alt: section.settings.heading
+                }}
+              {% endif %}
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+{% schema %}
+{
+  "name": "Home I",
+  "tag": "section",
+  "class": "shopify-section--home-i",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Follow your impulse to better beans."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Text",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL",
+      "default": "/collections/all"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL (optional)",
+      "info": "Paste an .mp4 link if you want a video instead of an image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home I - Banner with Media + Button"
+    }
+  ]
+}
+{% endschema %}
