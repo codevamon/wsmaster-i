@@ -1,0 +1,27 @@
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Theme Kit
+config.yml
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+
+# Shopify CLI files
+.shopify/
+.cache/
+
+# Environment files
+.env
+.env.* 
+
+# ZIPs or backup files
+*.zip
+*.bak

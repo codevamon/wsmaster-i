@@ -1,47 +1,44 @@
-# 🫘 Impulse Beans - Custom Shopify Theme
+# 🧠 WS Master I - Shopify Theme
 
-Impulse Beans is a modern, performance-optimized Shopify theme built by [@codevamon](https://github.com/codevamon) in collaboration with [Wagon Studio](https://wagonstudio.com).
+This is the main custom Shopify theme developed by [@codevamon](https://github.com/codevamon) for internal use at [Wagon Studio](https://wagonstudio.com).
 
-This theme is focused on clean design, lightning-fast load times, and flexibility for ecommerce brands that value aesthetics and performance.
+Built for flexibility, performance, and reusability across multiple Shopify projects.
 
 ---
 
 ## 🚀 Features
 
-- ✅ Liquid-based custom Shopify theme
-- 🖼️ Dynamic sections with image/video/media support
-- 🧠 Editable schema settings for content, CTA, layout
-- 💨 Optimized image loading (`image_url` with `width`, `crop`, `lazy`)
-- 🎯 Bootstrap 5 integrated with dropdowns and responsive layout
-- 🌱 Built to grow: ready for custom animations, tracking, apps
+- Modular section architecture
+- Shopify schema support
+- Bootstrap 5 ready
+- Lazy-loaded images via `image_url`
+- Custom animations and effects
+- Speed and performance focused
 
 ---
 
-## 📦 Folder Structure
+## 📁 Structure
 
 ```
-/assets          → CSS, JS, media
+/assets          → CSS, JS, images
 /config          → settings_schema.json
-/layout          → theme.liquid, password.liquid
-/locales         → translations (if needed)
-/sections        → reusable section templates
+/layout          → theme.liquid
+/sections        → re-usable layout blocks
 /snippets        → partials
-/templates       → pages, product, cart, etc.
+/templates       → product, collection, etc.
 ```
 
 ---
 
-## 🛠 Development
+## 🛠 Usage
 
-Use [Shopify CLI](https://shopify.dev/docs/themes/tools/cli) or [Theme Kit](https://shopify.github.io/themekit/) to develop and deploy.
-
-**Preview locally:**
+Use Shopify CLI for local development:
 
 ```bash
 shopify theme dev
 ```
 
-**Push updates:**
+Deploy with:
 
 ```bash
 shopify theme push
@@ -49,14 +46,14 @@ shopify theme push
 
 ---
 
-## 👥 Authors & Credits
+## 👥 Credits
 
-- **Main Developer**: [@codevamon](https://github.com/codevamon) – Web Developer, UI/UX specialist  
-- **Design Partner**: [Wagon Studio](https://wagonstudio.com) – Visual identity & creative direction
+- **Developer**: [@codevamon](https://github.com/codevamon)  
+- **Studio**: [Wagon Studio](https://wagonstudio.com)
 
 ---
 
 ## 📄 License
 
-© 2025 Codevamon. All rights reserved.  
-Not licensed for resale or reuse outside of agreed client projects.
+© 2025 Wagon Studio & Codevamon. All rights reserved.  
+This theme is proprietary and not for public distribution.
